@@ -1,0 +1,60 @@
+<style>
+    body {
+        background-color:red;
+    }
+    main.wrapper{
+        position:relative;
+        width:100%;
+        height:500px;
+        
+    }
+
+    .div1{
+        z-index:0;
+        position:absolute;
+        left:0;
+        top:0;
+        width: 300px;
+        height: 300px;
+        background-color:lightyellow;
+    }
+    
+    .div1 .child1{
+        z-index:3;
+        height:100px;
+        background-color:cyan;
+        
+    }
+
+    
+
+    .div2{
+        z-index:2;
+        position:absolute;
+        left:0;
+        top:0;
+        width:200px;
+        height:400px;
+        background-color:lightgreen;
+    }
+
+    .div3{
+        z-index: -1;
+        position:absolute;
+        left:0;
+        top:0;
+        width:400px;
+        height:200px;
+        background-color:lightblue;
+    }
+</style>
+
+
+<main class="wrapper">
+    <div class="div1">
+            这是这是这是这是这是这是这是这是这是这是这是这是这是
+        <div class="child1"></div>
+    </div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</main>
